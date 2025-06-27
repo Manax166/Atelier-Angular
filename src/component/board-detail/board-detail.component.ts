@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { BoardService } from '../board/board.service';
 import { Board } from "../board/board";
 import { BoardComponent } from '../board/board.component';
 
 @Component({
   selector: 'app-board-detail',
-  imports: [BoardComponent],
+  imports: [BoardComponent, RouterModule],
   templateUrl: './board-detail.html',
   styleUrl: './board-detail.css'
 })

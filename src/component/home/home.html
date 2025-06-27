@@ -1,16 +1,14 @@
-<nav>
-  <a routerLink="/home">Home</a>
+<nav class="navbar">
+  <a routerLink="/home">Accueil</a>
 </nav>
 
-<ul>
+<div class="board-list-container">
   @if (boards$ | async; as boards) {
     @for (board of boards; track board.id) {
-      <li>
+      <div class="board-card">
         {{ board.name }}
         <button (click)="goToBoardDetail(board.id)">Voir détails</button>
-      </li>
+      </div>
     }
-  } @else {
-    <li>Chargement des boards...</li>
   }
-</ul>
+</div>

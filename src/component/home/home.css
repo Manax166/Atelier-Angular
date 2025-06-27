@@ -1,0 +1,67 @@
+.navbar {
+  background-color: #026aa7;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.board-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: flex-start;
+}
+
+.board-card {
+  background-color: #f4f5f7;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.board-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.board-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #17394d;
+}
+
+.board-card button {
+  background-color: #5aac44;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.board-card button:hover {
+  background-color: #519839;
+}
+
+/* Chargement */
+.loading {
+  font-style: italic;
+  color: #888;
+  padding: 1rem;
+}

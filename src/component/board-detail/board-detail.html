@@ -1,2 +1,7 @@
-<h2 class="board-title">{{ board()?.name }}</h2>
+<nav class="navbar">
+    <h2 class="board-title">{{ board()?.name }}</h2>
+    <div class="right">
+    <a routerLink="/home">Retour à l’accueil</a>
+  </div>
+</nav>
 <app-board [board]="board()"></app-board>
