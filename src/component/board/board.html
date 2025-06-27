@@ -1,0 +1,30 @@
+<div class="board">
+  <form [formGroup]="taskForm" (ngSubmit)="addTaskFromForm()">
+    <label>
+      Titre :
+      <input formControlName="titre" />
+    </label>
+
+    <label>
+      Contenu :
+      <input formControlName="contenu" />
+    </label>
+
+    <label>
+      Liste :
+      <select formControlName="listId">
+          @for (list of board()?.lists; track list) {
+              <option [value]="list.id">{{ list.titre }}</option>
+          }
+      </select>
+    </label>
+    <button type="submit" [disabled]="taskForm.invalid">Ajouter</button>
+  </form>
+  <div class="board-lists">
+    @for(list of board()?.lists; track list.id){
+    <app-list 
+            [list]="list">
+    </app-list>
+    }
+    </div>
+</div>

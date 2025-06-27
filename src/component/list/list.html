@@ -1,0 +1,9 @@
+
+<h4>{{ this.titre() }}</h4>
+<div class="task-list">
+    @for (task of tasks(); track task.titre) {
+        <app-task 
+                [task]="task"
+        ></app-task>
+    }
+</div>

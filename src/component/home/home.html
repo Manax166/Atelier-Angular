@@ -1,0 +1,10 @@
+<nav>
+<a routerLink="/home">Home </a>
+<a routerLink="/board-detail"> Board Detail</a>
+</nav>
+<ul>
+    @for(board of boards; track board){
+        <li>{{board.name}} <button (click)="goToBoardDetail(board.id)">Voir détails</button></li>
+        
+    }
+</ul>
