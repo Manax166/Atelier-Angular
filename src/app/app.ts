@@ -6,7 +6,7 @@ import { BoardDetailComponent } from '../component/board-detail/board-detail.com
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BoardComponent, HomeComponent, BoardDetailComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
