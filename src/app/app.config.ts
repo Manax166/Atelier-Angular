@@ -5,11 +5,12 @@ import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { provideStore } from '@ngrx/store';
 import { boardsReducer } from './state/boards/boards.reducer';
+//import { listsReducer } from './state/lists/lists.reducer';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
-    provideRouter(routes), provideClientHydration(withEventReplay()), provideStore({boards: boardsReducer},)
+    provideRouter(routes), provideClientHydration(withEventReplay()), provideStore({boards: boardsReducer, /*lists: listsReducer*/},)
   ]
 };

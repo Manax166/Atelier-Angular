@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { loadBoards, addBoard } from './boards.actions';
+import { loadBoards, addBoard,} from './boards.actions';
 import { Board } from '../../../component/board/board';
 
 
